@@ -1,0 +1,216 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background: #1A1A2E;
+    box-sizing: border-box;
+}
+
+.initDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.svg{
+    width: 2rem;
+    aspect-ratio: 1/1;
+}
+
+/*Text: "ApplianceHub Admin" (or your store name)
+Font: Poppins
+Font size: 22px
+Font weight: 700
+Color: #E85D04 (Orange)
+Alignment: center
+Margin bottom: 8px*/
+
+.sysName{
+    font-family: "poppins", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #E85D04;
+}
+
+/*
+Text: "Manage your store"
+Font size: 13px
+Color: #888888
+Alignment: center
+Margin bottom: 32px*/
+.tagline{
+    font-size: 0.8rem;
+    color: #888888; 
+}
+
+/*Background: #FFFFFF
+Border radius: 16px
+Padding: 28px 24px
+Width: calc(100% - 48px) (24px padding on each side of screen)
+Max width: 400px
+Box shadow: 0 4px 24px rgba(0,0,0,0.15)*/
+
+.card{
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 28px 24px; 
+    box-sizing: border-box;
+    width: calc(100% - 48px);
+    max-width: 400px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+    margin-top: 20px;
+}
+
+/*Font size: 13px
+Font weight: 600
+Color: #1A1A2E
+Margin bottom: 6px*/
+
+.cardLabel{
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #1a1a2e;
+    margin-bottom: 6px;
+}
+
+/*
+Width: 100%
+Height: 48px
+Border: 1.5px solid #DDDDDD
+Border radius: 8px
+Padding: 0 14px
+Font size: 15px
+Color: #1A1A2E
+Background: #F8F9FA
+Margin bottom: 20px
+On focus — border color: #E85D04*/
+
+.cardInput{
+    width: 100%;
+    height: 48px;
+    border: 1.5px solid #DDDDDD;
+    border-radius: 8px;
+    padding: 0 14px;
+    box-sizing: border-box;
+    font-size: 0.9rem;
+    color: #1a1a2e;
+    background-color: #f8f9fa;
+    margin-bottom: 20px;
+}
+
+
+/*!!RETURN TO FIX FOCUS FOR CARD */
+
+
+
+.cardInput:focus{
+    border: 1.5px solid #E85D04;
+}
+
+/*Width: 100%
+Height: 50px
+Background: #E85D04
+Color: #FFFFFF
+Font size: 16px
+Font weight: 700
+Border radius: 8px
+Border: none
+Margin top: 8px
+On hover — background: #C94E00*/
+
+.lgnBtn{
+    width: 100%;
+    height: 50px;
+    background-color: #E85D04;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 8px;
+    border:none;
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lgnBtn:hover{
+    background: #c94e00;
+}
+
+
+
+
+/*spin animation*/
+/*Today LET'S WORK ON THE SPINNING ANIMATION */
+.btnSpinner{
+    width: 18px;
+    height: 18px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-top: 3px solid #ffffff;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+    margin-left: 10px;
+    vertical-align: middle;
+    display: none;
+}
+
+@keyframes spin{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+
+
+
+/*Font size: 13px
+Color: #C1121F
+Background: #FFF0F0
+Border radius: 6px
+Padding: 10px 14px
+Margin bottom: 16px*/
+
+.errMsg{
+    font-size: 0.8rem;
+    color: #c1121f;
+    background: #ffffff;
+    border-radius: 6px;
+    padding: 10px 14px;
+    margin-bottom: 16px;
+}
+
+.fgtPass{
+    font-size: 0.7rem;
+    text-align: right;
+    color: #c94e00;
+}
+
+.flexDiv{
+    display: flex;
+    position: relative;
+}
+
+#togglePassword{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translate(-50%, -130%);
+    border: none;
+}
+
+
+
+/*
+    SIDEBAR STYLING
+    Height: 56px
+    Background: #1A1A2E
+    Padding: 0 16px
+    Logo font size: 16px, color: #E85D04, font weight: 500
+    Admin text font size: 12px, color: #aaaaaa
+    Hamburger icon size: 20px, color: 
+*/
+

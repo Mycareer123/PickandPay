@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #F8F9FA;
+    color: #1A1A2E;
+    margin: 0 auto;
+}
+
+/* ─── HEADER ─────────────────────────────── */
+.header {
+    background: #1A1A2E;
+    padding: 0 16px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    color: #E85D04;
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+.logo i { font-size: 20px; }
+
+/* ─── MAIN ───────────────────────────────── */
+.main { padding: 16px; }
+
+.page-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1A1A2E;
+    margin-bottom: 4px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.page-sub {
+    font-size: 12px;
+    color: #888888;
+    margin-bottom: 20px;
+}
+
+/* ─── SEARCH CARD ────────────────────────── */
+.search-card {
+    background: #ffffff;
+    border-radius: 12px;
+    border: 0.5px solid #eeeeee;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+.search-card-title {
+    font-size: 13px;
+    font-weight: 500;
+    color: #1A1A2E;
+    margin-bottom: 10px;
+}
+
+.search-row {
+    display: flex;
+    gap: 8px;
+}
+
+.ref-input {
+    flex: 1;
+    height: 44px;
+    border: 1.5px solid #dddddd;
+    border-radius: 8px;
+    padding: 0 12px;
+    font-size: 14px;
+    color: #1A1A2E;
+    background: #F8F9FA;
+    font-family: 'Inter', sans-serif;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.ref-input:focus { border-color: #E85D04; }
+.ref-input::placeholder { color: #bbbbbb; }
+
+.track-btn {
+    height: 44px;
+    background: #E85D04;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 0 16px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    white-space: nowrap;
+    transition: background 0.2s;
+}
+
+.track-btn:hover { background: #C94E00; }
+
+.search-error {
+    font-size: 12px;
+    color: #C1121F;
+    margin-top: 8px;
+    display: none;
+}
+
+.search-error.show { display: block; }
+
+/* ─── SECTION CARD ───────────────────────── */
+.section-card {
+    background: #ffffff;
+    border-radius: 12px;
+    border: 0.5px solid #eeeeee;
+    padding: 16px;
+    margin-bottom: 14px;
+}
+
+.section-card-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1A1A2E;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.section-card-title i { font-size: 16px; color: #E85D04; }
+
+/* ─── REF BADGE ──────────────────────────── */
+.ref-badge {
+    background: #FFF3E0;
+    border-radius: 8px;
+    padding: 8px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.ref-badge-label { font-size: 11px; color: #888888; }
+.ref-badge-value {
+    font-size: 14px;
+    font-weight: 700;
+    color: #E85D04;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ─── TIMELINE ───────────────────────────── */
+.timeline { padding: 4px 0; }
+
+.timeline-item {
+    display: flex;
+    gap: 14px;
+}
+
+.timeline-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 24px;
+    flex-shrink: 0;
+}
+
+.timeline-dot {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.dot-completed { background: #2D6A4F; }
+.dot-completed i { font-size: 13px; color: #ffffff; }
+
+.dot-active { background: #E85D04; }
+.dot-active i { font-size: 13px; color: #ffffff; }
+
+.dot-future {
+    background: #F0F0F0;
+    border: 2px solid #dddddd;
+}
+
+.timeline-line {
+    width: 2px;
+    flex: 1;
+    min-height: 24px;
+    margin: 2px 0;
+    background: #eeeeee;
+}
+
+.timeline-line.completed { background: #2D6A4F; }
+
+.timeline-content {
+    padding-bottom: 24px;
+    flex: 1;
+}
+
+.timeline-stage {
+    font-size: 13px;
+    font-weight: 500;
+    color: #1A1A2E;
+    margin-bottom: 2px;
+}
+
+.timeline-stage.active { color: #E85D04; }
+.timeline-stage.future { color: #bbbbbb; }
+
+.timeline-date { font-size: 11px; color: #888888; }
+
+/* ─── DETAIL ROWS ────────────────────────── */
+.detail-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.detail-label {
+    font-size: 12px;
+    color: #888888;
+    flex-shrink: 0;
+    margin-right: 12px;
+}
+
+.detail-value {
+    font-size: 13px;
+    color: #1A1A2E;
+    font-weight: 500;
+    text-align: right;
+}
+
+.detail-divider {
+    border: none;
+    border-top: 0.5px solid #eeeeee;
+    margin: 10px 0;
+}
+
+.detail-total-label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #1A1A2E;
+}
+
+.detail-total-value {
+    font-size: 15px;
+    font-weight: 700;
+    color: #E85D04;
+}
+
+/* ─── RESULT AREA ────────────────────────── */
+.result-area { display: none; }
+.result-area.show { display: block; }
+
+/* ─── NOT FOUND ──────────────────────────── */
+.not-found {
+    text-align: center;
+    padding: 32px 16px;
+    background: #fff;
+    border-radius: 12px;
+    border: 0.5px solid #eee;
+    margin-bottom: 14px;
+    display: none;
+}
+
+.not-found.show { display: block; }
+.not-found i { font-size: 40px; color: #ddd; display: block; margin-bottom: 10px; }
+.not-found h3 { font-size: 15px; font-weight: 600; color: #1A1A2E; margin-bottom: 4px; }
+.not-found p { font-size: 12px; color: #888; }
+
+/* ─── SHOP BTN ───────────────────────────── */
+.shop-btn {
+    width: 100%;
+    height: 50px;
+    background: #ffffff;
+    color: #1A1A2E;
+    border: 1.5px solid #dddddd;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    text-decoration: none;
+    margin-bottom: 32px;
+    transition: border-color 0.2s;
+}
+
+.shop-btn:hover { border-color: #1A1A2E; }
+.shop-btn i { font-size: 18px; }
+
+/* ─── LOADING ────────────────────────────── */
+.loading {
+    text-align: center;
+    padding: 24px;
+    display: none;
+    color: #888;
+    font-size: 13px;
+}
+
+.loading.show { display: block; }

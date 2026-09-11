@@ -1,0 +1,377 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #F8F9FA;
+    color: #1A1A2E;
+    margin: 0 auto;
+}
+
+/* ─── HEADER ─────────────────────────────── */
+.header {
+    background: #1A1A2E;
+    padding: 0 16px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+.back-btn {
+    background: none;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    font-family: 'Inter', sans-serif;
+    width: 60px;
+}
+
+.back-btn i {
+    font-size: 18px;
+}
+
+.logo {
+    color: #E85D04;
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+.logo i {
+    font-size: 20px;
+}
+
+.header-spacer {
+    width: 60px;
+}
+
+/* ─── MAIN ───────────────────────────────── */
+.main {
+    padding: 16px;
+    padding-bottom: 100px;
+}
+
+.page-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1A1A2E;
+    margin-bottom: 4px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.page-sub {
+    font-size: 12px;
+    color: #888888;
+    margin-bottom: 20px;
+}
+
+/* ─── SECTION CARD ───────────────────────── */
+.section-card {
+    background: #ffffff;
+    border-radius: 12px;
+    border: 0.5px solid #eeeeee;
+    padding: 16px;
+    margin-bottom: 14px;
+}
+
+.section-card-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1A1A2E;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.section-card-title i {
+    font-size: 16px;
+    color: #E85D04;
+}
+
+/* ─── FORM FIELDS ────────────────────────── */
+.field-label {
+    font-size: 13px;
+    font-weight: 500;
+    color: #1A1A2E;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.required {
+    color: #C1121F;
+}
+
+.field-input {
+    width: 100%;
+    height: 44px;
+    border: 1.5px solid #dddddd;
+    border-radius: 8px;
+    padding: 0 12px;
+    font-size: 14px;
+    color: #1A1A2E;
+    background: #F8F9FA;
+    margin-bottom: 14px;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    outline: none;
+    transition: border-color 0.2s, background 0.2s;
+}
+
+.field-input:focus {
+    border-color: #E85D04;
+    background: #ffffff;
+}
+
+.field-input::placeholder {
+    color: #bbbbbb;
+}
+
+.field-input.error {
+    border-color: #C1121F;
+    background: #FFF0F0;
+}
+
+.field-select {
+    width: 100%;
+    height: 44px;
+    border: 1.5px solid #dddddd;
+    border-radius: 8px;
+    padding: 0 12px;
+    font-size: 14px;
+    color: #1A1A2E;
+    background: #F8F9FA;
+    margin-bottom: 14px;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    outline: none;
+    appearance: none;
+    cursor: pointer;
+    transition: border-color 0.2s;
+}
+
+.field-select:focus {
+    border-color: #E85D04;
+}
+
+.field-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.field-error {
+    font-size: 11px;
+    color: #C1121F;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    display: none;
+}
+
+.field-error.show {
+    display: block;
+}
+
+/* ─── PAYMENT METHOD ─────────────────────── */
+.payment-tile {
+    border: 1.5px solid #E85D04;
+    border-radius: 8px;
+    padding: 12px 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #FFF3E0;
+}
+
+.payment-icon {
+    width: 36px;
+    height: 36px;
+    background: #E85D04;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.payment-icon i {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.payment-label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #1A1A2E;
+    margin-bottom: 2px;
+}
+
+.payment-sub {
+    font-size: 11px;
+    color: #888888;
+}
+
+.payment-check {
+    margin-left: auto;
+    color: #E85D04;
+    font-size: 20px;
+    flex-shrink: 0;
+}
+
+/* ─── ORDER SUMMARY ──────────────────────── */
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.summary-label {
+    font-size: 13px;
+    color: #888888;
+}
+
+.summary-value {
+    font-size: 13px;
+    color: #1A1A2E;
+    font-weight: 500;
+}
+
+.summary-divider {
+    border: none;
+    border-top: 0.5px solid #eeeeee;
+    margin: 12px 0;
+}
+
+.summary-total-label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1A1A2E;
+}
+
+.summary-total-value {
+    font-size: 16px;
+    font-weight: 700;
+    color: #E85D04;
+}
+
+.delivery-pending {
+    font-size: 13px;
+    color: #888888;
+    font-style: italic;
+}
+
+/* ─── NOTE BOX ───────────────────────────── */
+.note-box {
+    background: #F0F7FF;
+    border-radius: 8px;
+    padding: 10px 12px;
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+    margin-bottom: 14px;
+}
+
+.note-box i {
+    font-size: 16px;
+    color: #185FA5;
+    flex-shrink: 0;
+    margin-top: 1px;
+}
+
+.note-text {
+    font-size: 12px;
+    color: #185FA5;
+    line-height: 1.5;
+}
+
+/* ─── PLACE ORDER BAR ────────────────────── */
+.order-bar {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 376px;
+    background: #ffffff;
+    padding: 12px 16px;
+    border-top: 0.5px solid #eeeeee;
+    z-index: 50;
+}
+
+.order-btn {
+    width: 100%;
+    height: 50px;
+    background: #E85D04;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: background 0.2s;
+}
+
+.order-btn:hover {
+    background: #C94E00;
+}
+
+.order-btn:disabled {
+    background: #cccccc;
+    cursor: not-allowed;
+}
+
+.order-btn i {
+    font-size: 18px;
+}
+
+/* ─── TOAST ──────────────────────────────── */
+.toast {
+    position: fixed;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%) translateY(80px);
+    background: #1A1A2E;
+    color: #ffffff;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 13px;
+    z-index: 300;
+    transition: transform 0.3s ease;
+    white-space: nowrap;
+    display:none;
+}
+
+.toast.show {
+    transform: translateX(-50%) translateY(0);
+    display:block;
+}
+
+.toast.success {
+    background: #2D6A4F;
+}
+
+.toast.error {
+    background: #C1121F;
+}

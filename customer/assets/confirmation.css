@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #F8F9FA;
+    color: #1A1A2E;
+    margin: 0 auto;
+}
+
+/* ─── HEADER ─────────────────────────────── */
+.header {
+    background: #1A1A2E;
+    padding: 0 16px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    color: #E85D04;
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+.logo i {
+    font-size: 20px;
+}
+
+/* ─── MAIN ───────────────────────────────── */
+.main {
+    padding: 24px 16px;
+}
+
+/* ─── SUCCESS BANNER ─────────────────────── */
+.success-banner {
+    text-align: center;
+    padding: 24px 16px;
+    margin-bottom: 20px;
+}
+
+.success-icon {
+    width: 72px;
+    height: 72px;
+    background: #EAF3DE;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px;
+}
+
+.success-icon i {
+    font-size: 36px;
+    color: #2D6A4F;
+}
+
+.success-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1A1A2E;
+    margin-bottom: 6px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.success-sub {
+    font-size: 13px;
+    color: #888888;
+    line-height: 1.5;
+}
+
+/* ─── SECTION CARD ───────────────────────── */
+.section-card {
+    background: #ffffff;
+    border-radius: 12px;
+    border: 0.5px solid #eeeeee;
+    padding: 16px;
+    margin-bottom: 14px;
+}
+
+.section-card-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1A1A2E;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.section-card-title i {
+    font-size: 16px;
+    color: #E85D04;
+}
+
+/* ─── ORDER REFERENCE ────────────────────── */
+.order-ref-box {
+    background: #FFF3E0;
+    border: 1.5px dashed #E85D04;
+    border-radius: 8px;
+    padding: 14px;
+    text-align: center;
+}
+
+.order-ref-label {
+    font-size: 11px;
+    color: #888888;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.order-ref-value {
+    font-size: 22px;
+    font-weight: 700;
+    color: #E85D04;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.order-ref-hint {
+    font-size: 11px;
+    color: #888888;
+    margin-top: 6px;
+}
+
+/* ─── DETAIL ROWS ────────────────────────── */
+.detail-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.detail-label {
+    font-size: 12px;
+    color: #888888;
+    flex-shrink: 0;
+    margin-right: 12px;
+}
+
+.detail-value {
+    font-size: 13px;
+    color: #1A1A2E;
+    font-weight: 500;
+    text-align: right;
+}
+
+.detail-divider {
+    border: none;
+    border-top: 0.5px solid #eeeeee;
+    margin: 10px 0;
+}
+
+.detail-total-label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #1A1A2E;
+}
+
+.detail-total-value {
+    font-size: 15px;
+    font-weight: 700;
+    color: #E85D04;
+}
+
+.status-pending {
+    color: #E85D04;
+    font-weight: 500;
+}
+
+/* ─── NOTE BOX ───────────────────────────── */
+.note-box {
+    background: #F0F7FF;
+    border-radius: 8px;
+    padding: 10px 12px;
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.note-box i {
+    font-size: 16px;
+    color: #185FA5;
+    flex-shrink: 0;
+    margin-top: 1px;
+}
+
+.note-text {
+    font-size: 12px;
+    color: #185FA5;
+    line-height: 1.5;
+}
+
+/* ─── BUTTONS ────────────────────────────── */
+.btn-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 32px;
+}
+
+.track-btn {
+    width: 100%;
+    height: 50px;
+    background: #E85D04;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.track-btn:hover {
+    background: #C94E00;
+}
+
+.track-btn i {
+    font-size: 18px;
+}
+
+.shop-btn {
+    width: 100%;
+    height: 50px;
+    background: #ffffff;
+    color: #1A1A2E;
+    border: 1.5px solid #dddddd;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    text-decoration: none;
+    transition: border-color 0.2s;
+}
+
+.shop-btn:hover {
+    border-color: #1A1A2E;
+}
+
+.shop-btn i {
+    font-size: 18px;
+}
+
+/* ─── ERROR STATE ────────────────────────── */
+.error-state {
+    text-align: center;
+    padding: 64px 16px;
+}
+
+.error-state i {
+    font-size: 48px;
+    color: #dddddd;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.error-state h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1A1A2E;
+    margin-bottom: 6px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.error-state p {
+    font-size: 13px;
+    color: #888888;
+    margin-bottom: 20px;
+}

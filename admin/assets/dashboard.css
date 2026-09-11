@@ -1,0 +1,540 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background: #ffffff;
+}
+
+.navbar{
+    background-color: #1a1a2e;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    height: fit-content;
+    box-sizing: border-box;
+}
+
+.svg{
+    width: 2rem;
+    aspect-ratio: 1/1;
+}
+
+.tagline{
+    font-size: 0.8rem;
+    color: #888888; 
+}
+
+
+.sysName{
+    font-family: "poppins", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #E85D04;
+}
+
+.navbar span{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.topbar{
+    justify-content: space-between;
+    height: 50px;
+}
+
+.navbar img{
+    width: 25px;
+}
+
+.navbar h3{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.navbar .tagline{
+    font-size: 0.75rem;
+}
+
+/* HAMBURGER */
+.hamburger{
+    width: 2rem;
+    border: none;
+    height: 1.8rem;
+    background: transparent;
+    flex: column;
+    justify-content: space-between;
+    cursor: pointer;
+    z-index: 10;
+    box-sizing: border-box;
+}
+
+.bar{
+    width: 100%;
+    margin-bottom: 3px;
+    height: 3px;
+    border-radius: 2px;
+    background-color: #ffffff;
+}
+
+
+/*
+NAVBAR DRAWER
+Background: #1A1A2E
+Padding: 16px
+Each nav item height: 48px
+Nav item padding: 12px 8px
+Nav item border radius: 8px
+Nav item font size: 14px, color: #aaaaaa
+Active nav item background: rgba(232,93,4,0.12), color: #E85D04
+Nav icon size: 18px
+Logout sits at the bottom separated by a 0.5px solid rgba(255,255,255,0.08) border top
+*/
+
+.navDrawer{
+    background: #1a1a2e;
+    padding: 16px;
+    box-sizing: border-box;
+    display: none;
+    
+}
+
+.navDrawer li{
+    margin: 10px;
+}
+
+.nav-link{
+    height: 48px;
+    padding: 12px 8px;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    color: #aaaaaa;
+    width: 100%;
+}
+
+.active{
+    background: rgba(232, 93, 4, 0.12);
+    color: #E85D04;
+}
+
+.logout{
+    border-top: 0.5px solid rgba(255, 255, 255, 0.08);
+    padding-top: 15px;
+    border-radius: 10px;
+}
+
+.logout button{
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+    color: #aaaaaa;
+    background-color: #1a1a2e;
+}
+
+
+/* 
+    Background: #F8F9FA
+    Padding: 16px
+*/
+
+main{
+    padding: 16px;
+    background-color: #f8f9fa;
+}
+/*
+    PAGE TILE
+    Font size: 18px
+    Font weight: 500
+    Color: #1A1A2E
+    Margin bottom: 4px
+*/
+
+.title{
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #1a1a2e;
+    margin-bottom: 4px;
+}
+
+
+
+/* 
+    Page Subtitle
+    Font size: 12px
+    Color: #888888
+    Margin bottom: 16px
+*/
+.subTitle{
+    font-size: 0.75rem;
+    color: #888888;
+    margin-bottom: 16px;
+}
+
+
+/*
+    Stat Cards
+
+    Layout: 2 columns — grid-template-columns: repeat(2, minmax(0, 1fr))
+    Gap between cards: 12px
+    Margin bottom: 20px
+    Card background: #ffffff
+    Card border radius: 12px
+    Card padding: 16px
+    Card border: 0.5px solid #eeeeee
+*/
+
+.statContainer{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    border-radius: 12px;
+    border: 0.5px solid #eeeeee;
+}
+
+.stat{
+    background-color: #ffffff;
+    width: 100%;
+    border-radius: 8px;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+/*
+    Icon box inside card
+
+    Width & height: 36px
+    Border radius: 8px
+    Margin bottom: 12px
+    Products icon background: #FFF3E0, icon color: #E85D04
+    Orders icon background: #E6F1FB, icon color: #185FA5
+    Icon size: 18px
+*/
+.stat i{
+   font-size: 18px;
+}
+
+.productIcon{
+    background-color: #fff3e0;
+    color: #E85D04;
+}
+
+.orderIcon{
+    background-color: #e6f1fb;
+    color: #185fa5;
+}
+
+/*
+    Stat label
+
+    Font size: 12px
+    Color: #888888
+    Margin bottom: 4px
+
+*/
+
+.statLabel{
+    font-size: 0.75rem;
+    color: #888888;
+    margin-bottom: 4px;
+}
+
+
+/*
+    Stat Number
+    Font size: 26px
+    Font weight: 500
+    Color: #1A1A2E
+*/
+
+.statNumber{
+    font-size: 1.625rem;
+    font-weight: 500;
+    color: #1a1a2e;
+}
+
+.sectionTitle{
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #1a1a2e;
+    margin-bottom: 12px;
+}
+
+/*
+    Orders Table Card
+    Background: #ffffff
+    Border radius: 12px
+    Border: 0.5px solid #eeeeee
+    Overflow: hidden
+*/
+.orderTable{
+    background-color: #ffffff;
+    border: 0.5px solid #eeeeee;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+/*
+    Table Header
+
+    Background: #1A1A2E
+    Padding: 10px 14px
+    Font size: 11px
+    Color: #aaaaaa
+    Font weight: 500
+    Letter spacing: 0.5px
+    3 equal columns: grid-template-columns: 1fr 1fr 1fr
+
+*/
+.tableHeader{
+    background-color: #1a1a2e;
+    padding: 10px  14px;
+    font-size: 0.6875rem;
+    color: #aaaaaa;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    height: 40px;
+}
+
+/*
+
+    Table Row
+
+    Padding: 12px 14px
+    Border bottom: 0.5px solid #f0f0f0
+    Even rows background: #FAFAFA
+    Last row has no border bottom
+    3 equal columns: grid-template-columns: 1fr 1fr 1fr
+*/
+
+.tableRow{
+    padding: 12px 14px;
+    border-bottom: 0.5px solid #f0f0f0;
+    height: 40px;
+}
+
+.data{
+    text-align: center;
+}
+
+.even{
+    background-color: #fafafa;
+}
+
+tr:last-child{
+    border-bottom: none;
+}
+
+/*
+    Order ID
+
+    Font size: 12px
+    Font weight: 500
+    Color: #1A1A2E
+*/
+
+.order{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #1a1a2e;
+}
+
+/*
+    Order Price
+
+    Font size: 12px
+    Color: #1A1A2E
+*/
+
+.price{
+    font-size: 1rem;
+    color: #1a1a2e;
+}
+/*
+    Font size: 11px
+    Padding: 3px 8px
+    Border radius: 20px
+    Pending — background: #FFF3E0, color: #854F0B
+    Processing — background: #E6F1FB, color: #185FA5
+    Delivered — background: #EAF3DE, color: #3B6D11
+*/
+.status{
+    box-sizing: border-box;
+    font-size: 0.75rem;
+    border-radius: 20px;
+}
+
+.section-title {
+    font-size: 14px;
+    font-weight: 500;
+    color: #1A1A2E;
+    margin-bottom: 12px;
+    margin-top: 20px;
+}
+
+.orders-card {
+    background: #ffffff;
+    border-radius: 12px;
+    border: 0.5px solid #eeeeee;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.orders-card-head {
+    padding: 14px 16px;
+    border-bottom: 0.5px solid #eeeeee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.orders-card-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1A1A2E;
+}
+
+.order-row {
+    padding: 12px 16px;
+    border-bottom: 0.5px solid #f5f5f5;
+}
+
+.order-row:last-child {
+    border-bottom: none;
+}
+
+.order-row-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 6px;
+}
+
+.order-ref {
+    font-size: 13px;
+    font-weight: 600;
+    color: #1A1A2E;
+}
+
+.order-date {
+    font-size: 11px;
+    color: #888888;
+}
+
+.order-row-mid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.order-customer {
+    font-size: 12px;
+    color: #555555;
+}
+
+.order-total {
+    font-size: 13px;
+    font-weight: 700;
+    color: #E85D04;
+}
+
+.order-row-bottom {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.status-select {
+    flex: 1;
+    height: 34px;
+    border-radius: 6px;
+    border: 1.5px solid #dddddd;
+    padding: 0 8px;
+    font-size: 12px;
+    font-family: 'Inter', sans-serif;
+    color: #1A1A2E;
+    background: #F8F9FA;
+    outline: none;
+    appearance: none;
+    cursor: pointer;
+    transition: border-color 0.2s, background 0.2s;
+}
+
+.status-select.pending {
+    border-color: #F4A261;
+    color: #854F0B;
+    background: #FFF3E0;
+}
+
+.status-select.processing {
+    border-color: #2176AE;
+    color: #185FA5;
+    background: #E6F1FB;
+}
+
+.status-select.delivered {
+    border-color: #2D6A4F;
+    color: #2D6A4F;
+    background: #EAF3DE;
+}
+
+.save-status-btn {
+    height: 34px;
+    background: #1A1A2E;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 0 14px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    white-space: nowrap;
+    transition: background 0.2s;
+}
+
+.save-status-btn:hover {
+    background: #E85D04;
+}
+
+.save-status-btn:disabled {
+    background: #cccccc;
+    cursor: not-allowed;
+}
+
+.toast {
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%) translateY(80px);
+    background: #1A1A2E;
+    color: #ffffff;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 13px;
+    z-index: 300;
+    transition: transform 0.3s ease;
+    white-space: nowrap;
+}
+
+.toast.show {
+    transform: translateX(-50%) translateY(0);
+}
+
+.toast.success {
+    background: #2D6A4F;
+}
+
+.toast.error {
+    background: #C1121F;
+}
