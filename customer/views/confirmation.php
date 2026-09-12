@@ -12,7 +12,7 @@
 
 <!-- ─── HEADER ─────────────────────────────────── -->
 <header class="header">
-    <a href="index.php" class="logo">
+    <a href="../../index.php" class="logo">
         <i class="ti ti-shopping-cart"></i> PicknPay
     </a>
 </header>
@@ -155,7 +155,7 @@ if (empty($orderRef)) {
             <a href="track.php?ref=<?= urlencode($order['order_ref']) ?>" class="track-btn">
                 <i class="ti ti-map-search"></i> Track My Order
             </a>
-            <a href="../index.php" class="shop-btn">
+            <a href="../../index.php" class="shop-btn">
                 <i class="ti ti-shopping-bag"></i> Continue Shopping
             </a>
         </div>

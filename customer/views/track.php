@@ -12,7 +12,7 @@
 
 <!-- ─── HEADER ─────────────────────────────────── -->
 <header class="header">
-    <a href="index.php" class="logo">
+    <a href="../../index.php" class="logo">
         <i class="ti ti-shopping-cart"></i> PicknPay
     </a>
 </header>
@@ -101,7 +101,7 @@
     </div>
 
     <!-- CONTINUE SHOPPING -->
-    <a href="index.php" class="shop-btn">
+    <a href="../../index.php" class="shop-btn">
         <i class="ti ti-shopping-bag"></i> Continue Shopping
     </a>
 

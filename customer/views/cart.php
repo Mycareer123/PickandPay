@@ -15,7 +15,7 @@
     <button class="back-btn" id="backBtn" aria-label="Go back">
         <i class="ti ti-arrow-left"></i> Back
     </button>
-    <a href="index.php" class="logo">
+    <a href="../../index.php" class="logo">
         <i class="ti ti-shopping-cart"></i> PicknPay
     </a>
     <div class="header-spacer"></div>
@@ -34,7 +34,7 @@
         <i class="ti ti-shopping-cart-off"></i>
         <h3>Your cart is empty</h3>
         <p>Looks like you haven't added anything yet.</p>
-        <a href="../index.php" class="shop-btn">
+        <a href="../../index.php" class="shop-btn">
             <i class="ti ti-shopping-bag"></i> Shop Now
         </a>
     </div>

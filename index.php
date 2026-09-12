@@ -1,5 +1,5 @@
 <?php
-    require "../config/db.php";
+    require "config/db.php";
 
 
     // Fetch all active products from the database
@@ -20,7 +20,7 @@
     <title>PicknPay - Quality Appliances for Every Home</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/main.css">
+    <link rel="stylesheet" href="customer/assets/main.css">
 </head>
 <body>
 
@@ -32,7 +32,7 @@
             PicknPay
         </a>
         <div class="header-right">
-            <a href="views/cart.php">
+            <a href="customer/views/cart.php">
                 <button class="cart-btn" id="cartBtn" aria-label="View cart">
                     <i class="ti ti-shopping-cart"></i>
                     <span class="cart-badge" id="cartBadge">0</span>
@@ -54,7 +54,8 @@
     <span class="hero-tag">🏠 Home Appliances</span>
     <h1 class="hero-title">Quality Appliances<br>for <span>Every Home</span></h1>
     <p class="hero-sub">Browse our wide range of home appliances delivered nationwide.</p>
-    <a href="products.php" target="_blank" class="hero-btn">
+    <!--Add shop now feature later -->
+    <a href="products.php" target="_blank" class="hero-btn" style="display: none;">
         <i class="ti ti-shopping-bag"></i> Shop Now
     </a>
 </section>
@@ -82,7 +83,7 @@
                 ]);
                 $mainImage = $stmt->fetch(PDO::FETCH_ASSOC);
                 if(isset($mainImage['image_url'])) {
-                    $imageUrl = str_replace("../../", "../", $mainImage['image_url']); 
+                    $imageUrl = str_replace("../../", "", $mainImage['image_url']); 
                 } else {
                     $imageUrl = null; // or set a default image URL
                 }
@@ -132,7 +133,7 @@
                 ]);
                 $mainImage = $stmt->fetch(PDO::FETCH_ASSOC);
                 if(isset($mainImage['image_url'])) {
-                    $imageUrl = str_replace("../../", "../", $mainImage['image_url']); 
+                    $imageUrl = str_replace("../../","", $mainImage['image_url']); 
                 } else {
                     $imageUrl = null; // or set a default image URL
                 }
@@ -178,7 +179,7 @@
 <div class="toast" id="toast"></div>
 
 <!-- Your JS file goes here -->
-<script src="assets/main.js" defer></script>
+<script src="customer/assets/main.js" defer></script>
 
 </body>
 </html>

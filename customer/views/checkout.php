@@ -15,7 +15,7 @@
     <button class="back-btn" id="backBtn" aria-label="Go back">
         <i class="ti ti-arrow-left"></i> Back
     </button>
-    <a href="index.php" class="logo">
+    <a href="../../index.php" class="logo">
         <i class="ti ti-shopping-cart"></i> PicknPay
     </a>
     <div class="header-spacer"></div>
