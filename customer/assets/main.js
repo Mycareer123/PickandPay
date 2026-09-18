@@ -81,3 +81,14 @@ document.querySelectorAll('.add-cart-btn').forEach(btn => {
         showToast('Added to cart');
     });
 });
+
+const productTile = document.querySelectorAll(".product-tile");
+productTile.forEach(card =>{
+    card.addEventListener("click", async function(e){
+        e.preventDefault();
+        const id = parseInt(card.dataset.id);
+        const response = await fetch(`customer/views/product_details.php?id=${id}`);
+        url = `customer/views/product_details.php?id=${id}`;
+        window.location.href = url;
+    });
+});

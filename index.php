@@ -51,7 +51,6 @@
 <section class="hero">
     <div class="hero-circle"></div>
     <div class="hero-circle2"></div>
-    <span class="hero-tag">🏠 Home Appliances</span>
     <h1 class="hero-title">Quality Appliances<br>for <span>Every Home</span></h1>
     <p class="hero-sub">Browse our wide range of home appliances delivered nationwide.</p>
     <!--Add shop now feature later -->
