@@ -110,12 +110,13 @@ function attachCartListeners() {
 
     // Increase quantity
     document.querySelectorAll('.plus-btn').forEach(btn => {
-        btn.addEventListener('click', () => {
+        btn.addEventListener('click', (e) => {
+            const qty = btn.closest('.cart-item').querySelector('.qty-value');
             const cart = getCart();
             const index = parseInt(btn.dataset.index);
             cart[index].quantity += 1;
+            qty.innerHTML = cart[index].quantity;
             saveCart(cart);
-            renderCart();
             updateCartBadge();
         });
     });
@@ -123,16 +124,17 @@ function attachCartListeners() {
     // Decrease quantity
     document.querySelectorAll('.minus-btn').forEach(btn => {
         btn.addEventListener('click', () => {
+            const qty = btn.closest('.cart-item').querySelector('.qty-value');
             const cart = getCart();
             const index = parseInt(btn.dataset.index);
             if (cart[index].quantity > 1) {
                 cart[index].quantity -= 1;
+                qty.innerHTML = cart[index].quantity;
             } else {
                 // Remove item if quantity reaches 0
                 cart.splice(index, 1);
             }
             saveCart(cart);
-            renderCart();
             updateCartBadge();
         });
     });
