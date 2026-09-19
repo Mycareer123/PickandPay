@@ -7,9 +7,6 @@
     $stmt = $conn->prepare($sql);
     $stmt->execute();
     $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
-    
-
 ?>
 
 <!DOCTYPE html>
@@ -63,7 +60,7 @@
 <section class="section">
     <div class="section-head">
         <span class="section-title">Featured Products</span>
-        <a href="products.php" target="_blank" class="see-all">See all →</a>
+        <a href="products.php" target="_blank" class="see-all" style="display: none">See all →</a>
     </div>
     <div class="product-grid" id="featuredGrid">
 
@@ -111,7 +108,7 @@
 <section class="section" style="padding-top: 0;">
     <div class="section-head">
         <span class="section-title">New Arrivals</span>
-        <a href="products.php" class="see-all">See all →</a>
+        <a href="products.php" class="see-all" style="display: none">See all →</a>
     </div>
     <div class="product-grid" id="newArrivalsGrid">
 
@@ -165,10 +162,10 @@
     </div>
     <p class="footer-tagline">Quality appliances for every home.<br>Delivered nationwide.</p>
     <div class="footer-links">
-        <a href="#" class="footer-link">About Us</a>
-        <a href="#" class="footer-link">Contact Us</a>
-        <a href="track.php" class="footer-link">Track My Order</a>
-        <a href="#" class="footer-link">Privacy Policy</a>
+        <a href="#" class="footer-link" style="display: none">About Us</a>
+        <a href="#" class="footer-link" style="display: none">Contact Us</a>
+        <a href="customer/views/track.php" class="footer-link">Track My Order</a>
+        <a href="#" class="footer-link" style="display: none">Privacy Policy</a>
     </div>
     <hr class="footer-divider">
     <p class="footer-bottom">© 2026 PicknPay. All rights reserved.</p>
